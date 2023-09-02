@@ -1,0 +1,305 @@
+.home {
+    height: 100%;
+    position: relative;
+    visibility: hidden;
+
+    .nav {
+        position: absolute;
+        width: 100%;
+        padding: 3.2rem var(--gutter);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        //stay above hero section
+        z-index: 2;
+
+        .logo {
+            color: $conch;
+            font-size: 3.2rem;
+            font-weight: 600;
+            font-family: "plus jakarta";
+            line-height: 1.25;
+            display: flex;
+
+            &__pt2 {
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+        }
+
+        &__linkWrap {
+        }
+
+        &__link {
+            @extend %link;
+            display: block;
+            color: $conch;
+        }
+    }
+
+    .hero {
+        height: 93.7rem;
+        background-color: $bush;
+        position: relative;
+        overflow: hidden;
+
+        & > div {
+            position: absolute;
+        }
+
+        &__imgWrap {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        &__imgCover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            &--first {
+                background-color: $white;
+            }
+
+            &--second {
+                background-color: $bush;
+            }
+        }
+
+        &__img {
+            display: block;
+            width: 110rem;
+        }
+
+        &__textUnderneathWrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $conch;
+            padding: 1.8rem 0;
+        }
+
+        &__textUnderneath {
+            font-family: "plus jakarta";
+            font-size: 12.8rem;
+            // letter-spacing: 2.56px;
+
+            &--1 {
+                font-weight: 600;
+                transform: translateX(-1rem);
+            }
+
+            &--2 {
+                font-style: italic;
+                transform: translateX(0.8rem);
+            }
+        }
+
+        &__text {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p {
+                font-family: "plus jakarta";
+                font-size: 5.6rem;
+                font-weight: 300;
+                line-height: 1.14;
+                color: $white;
+
+                span {
+                    font-weight: 500;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .history {
+        padding: var(--gutter);
+        color: $black-bean;
+
+        &__title {
+            font-family: "plus jakarta";
+            font-size: 4rem;
+            font-weight: 500;
+            width: 75.5rem;
+            line-height: 1.4;
+            margin-bottom: 5.333rem;
+
+            &--2 {
+                text-align: center;
+                line-height: 1.2;
+                width: 45.6rem;
+                margin: 0 auto;
+            }
+        }
+
+        &__grid {
+            display: flex;
+            gap: 4.8rem;
+            align-items: center;
+            margin-bottom: 8.933rem;
+
+            & > * {
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__bout {
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+
+            p {
+                line-height: 1.4;
+            }
+        }
+    }
+
+    .solvedFor {
+        margin-bottom: 30rem;
+
+        .solved {
+            padding: 3.2rem 4rem 12.1rem var(--gutter);
+            border-radius: 2.4rem 2.4rem 0 0;
+            position: sticky;
+            top: 0px;
+
+            &--mojo {
+                --img-layer1: #{adjust-color($mojo, $whiteness: 5%)};
+                --img-layer2: #{adjust-color($mojo, $whiteness: 11%)};
+
+                background-color: $mojo;
+            }
+
+            &--rosebud {
+                --img-layer1: #{adjust-color($rose-bud, $whiteness: 5%)};
+                --img-layer2: #{adjust-color($rose-bud, $whiteness: 11%)};
+
+                background-color: $rose-bud;
+            }
+
+            &--sandybrown {
+                --img-layer1: #{adjust-color($sandy-brown, $whiteness: 5%)};
+                --img-layer2: #{adjust-color($sandy-brown, $whiteness: 11%)};
+
+                background-color: $sandy-brown;
+            }
+
+            &__top {
+                margin-bottom: 6.4rem;
+            }
+
+            &__label {
+                text-transform: uppercase;
+                font-family: "plus jakarta";
+                font-size: 3.2rem;
+                font-weight: 500;
+                font-style: italic;
+                line-height: 1.25;
+                color: $white;
+            }
+
+            &__grid {
+                display: flex;
+                align-items: center;
+                gap: 5.8rem;
+            }
+
+            &__copy {
+                flex-basis: 42.4rem;
+                color: $black-bean;
+
+                p {
+                    line-height: 1.75;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            &__title {
+                font-family: "plus jakarta";
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 1.25;
+                margin-bottom: 2.4rem;
+            }
+
+            &__imgWrap {
+                flex-basis: 83rem;
+            }
+
+            &__imgLayer {
+                padding: 2.4rem;
+
+                &--1 {
+                    background-color: var(--img-layer1);
+                }
+
+                &--2 {
+                    background-color: var(--img-layer2);
+                }
+            }
+
+            &__img {
+                width: 100%;
+            }
+
+            &__imgLayer,
+            &__img {
+                border-radius: 0.8rem;
+            }
+        }
+    }
+
+    .findOut {
+        padding: 0 var(--gutter);
+        padding-bottom: 18.6rem;
+
+        &__title {
+            font-family: "plus jakarta";
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 1.2;
+            max-width: 46rem;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 6.4rem;
+        }
+
+        &__imgWrap {
+            background-color: $rose-bud;
+            border-radius: 0.8rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 9.6rem;
+        }
+
+        &__img {
+            width: 65.5rem;
+        }
+
+        &__linkWrap {
+            text-align: center;
+        }
+    }
+}

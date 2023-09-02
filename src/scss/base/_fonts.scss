@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "plus jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-Light.ttf") format("truetype");
+
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "plus jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "plus jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-MediumItalic.ttf")
+        format("truetype");
+
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "plus jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-SemiBold.ttf")
+        format("truetype");
+
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "plus jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-SemiBoldItalic.ttf")
+        format("truetype");
+
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "synonym";
+    src: url("../../assets/fonts/Synonym-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

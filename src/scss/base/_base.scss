@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: calc(100vw / 1440) * 10;
+    --gutter: 8.8rem;
+}
+
+body {
+    font-family: "synonym";
+    font-size: 1.6rem;
+    background-color: $lavender-blush;
+}
+
+[data-animate="link"] {
+    & .wrap {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+
+        & > span:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+    }
+}
+
+[data-animate="text"] {
+    & .wordWrap {
+        display: inline-flex;
+        overflow: hidden;
+
+        &__word {
+            display: inline-block;
+        }
+    }
+}

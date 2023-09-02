@@ -1,0 +1,22 @@
+.c-curvedLink {
+    @extend %link;
+    display: inline-block;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.8rem;
+    color: $conch;
+    line-height: 1.4;
+
+    //aesthetics modifiers
+    &--dark {
+        background-color: $black;
+    }
+
+    &--blend {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    //layout modifiers
+    &--sm {
+        padding: 0.8rem 1.6rem;
+    }
+}
